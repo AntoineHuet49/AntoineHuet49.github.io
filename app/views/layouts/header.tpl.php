@@ -26,8 +26,8 @@
     </button>
           <div class="nav__menu nav justify-content-end collapse navbar-collapse" id="navbarToggler">
             <ul class="mb-2 mb-lg-0">
-              <li><a href=""><i class="bi bi-file-earmark-person-fill"></i></a></li>
-              <li><a href=""><i class="bi bi-file-earmark-person-fill"></i></a></li>
+              <li><a href="<?=  $router->generate('main-profil') ?>"><i class="bi bi-file-earmark-person-fill"></i></a></li>
+              <li><a href=""><i class="bi bi-file-text"></i></a></li>
             </ul>
           </div>
         </nav>

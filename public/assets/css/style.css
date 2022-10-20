@@ -7,7 +7,7 @@ body {
     background-position: center;
     background-size: cover;
 
-    overflow: hidden;
+    /* overflow: auto; */
     color: whitesmoke;
 }
 
@@ -78,12 +78,30 @@ div.main {
     flex-direction: column;
 }
 
+
 h1.name__title {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 1.4rem;
     font-size: 3rem;
+    /* text-shadow: 0.1rem 0.1rem 0.4rem whitesmoke; */
+}
+
+div.name {
+    animation-delay: 0.5s;
+    animation-duration: 3s;
+    animation-name: upToDown;
+}
+@keyframes upToDown {
+    from{
+        padding-bottom: 10%;
+        opacity: 0;
+    }
+    to {
+        padding-bottom: 0%;
+        opacity: 100%;
+    }
 }
 
 div.séparation {
@@ -91,10 +109,52 @@ div.séparation {
     width: 5%;
     height: 0.1rem;
     align-self: center;
+
+    /* animation-delay: 0.5s; */
+    animation-duration: 3s;
+    animation-name: noneToDisplay;
+}
+@keyframes noneToDisplay {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
 }
 
 div.job {
     font-size: 2rem;
     display: flex;
     justify-content: center;
+
+    animation-delay: 0.5s;
+    animation-duration: 3s;
+    animation-name: noneToDisplay;
+}
+
+/*-----------------
+------ PROFIL -----
+-----------------*/
+
+div.main-profil {
+    display: flex;
+    justify-content: center;
+}
+
+div.card {
+    background-color: #A9714B;
+    max-width: 75%;
+    margin-top: 5rem;
+}
+
+img.image-profil {
+    max-height: 20vh;
+    border-radius: 50%;
+    float: left;
+    margin-right: 1rem;
+}
+
+div.card-body > p {
+    text-align: justify;
 }

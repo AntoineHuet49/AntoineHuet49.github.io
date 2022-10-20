@@ -14,7 +14,14 @@ class MainController extends CoreController
      */
     public function home()
     {
-        // var_dump('maincontroller');
         $this->show('home');
+    }
+
+    /**
+     * gère l'affichage de la page profil
+     */
+    public function profil()
+    {
+        $this->show('profil');
     }
 }

@@ -17,6 +17,14 @@ $router->map(
     'main-home'
 );
 
+//page Profil
+$router->map(
+    'GET',
+    '/profil',
+    'MainController::profil',
+    'main-profil',
+);
+
 
 
 $match = $router->match();
