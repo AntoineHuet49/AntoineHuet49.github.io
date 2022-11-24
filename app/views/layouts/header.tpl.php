@@ -14,6 +14,8 @@
 
     <!-- JS -->
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="./assets/js/app.js"></script>
+    <script defer src="./assets/js/CV.js"></script>
 
 </head>
 <body>
