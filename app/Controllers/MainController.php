@@ -24,4 +24,12 @@ class MainController extends CoreController
     {
         $this->show('profil');
     }
+
+    /**
+     * gère l'affichege de la page CV
+     */
+    public function CV()
+    {
+        $this->show('CV');
+    }
 }

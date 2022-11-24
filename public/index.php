@@ -25,6 +25,13 @@ $router->map(
     'main-profil',
 );
 
+// Page CV
+$router->map(
+    'GET',
+    '/CV',
+    'MainController::CV',
+    'main-CV',
+);
 
 
 $match = $router->match();

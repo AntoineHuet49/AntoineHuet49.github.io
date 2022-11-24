@@ -6,7 +6,8 @@ body {
     background-image: url(../images/background-pc.jpg);
     background-position: center;
     background-size: cover;
-
+    background-repeat: no-repeat;
+    
     /* overflow: auto; */
     color: whitesmoke;
 }
@@ -157,4 +158,20 @@ img.image-profil {
 
 div.card-body > p {
     text-align: justify;
+}
+
+/*-----------------
+------ CV ---------
+-----------------*/
+
+.main-CV {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-CV {
+    width: 60%;
+margin: 2rem 0;
 }
